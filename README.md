@@ -12,6 +12,39 @@
   <li><a href="#credits">Credits</a></li>
 </ul>
 
+# 📃 About
+
+# 🌄 Demonstration
+
+# 🔥 Features
+
+- Suggestion of structure:
+
+```
+src/
++-- modules/
+|   +-- moduleA/
+|       +-- components/
+|       +-- services/
+|       +-- helpers/
+|       +-- router/
+|       +-- store/
+|   +-- moduleB/
+|   +-- moduleC/
+```
+- Routes for navigation.
+
+- Route for page not found.
+
+- Lazy load.
+
+- Navbar caching compoments
+
+- Lifecyles Hooks
+
+- QueryParams
+
+
 ## Project setup
 ```
 npm install
