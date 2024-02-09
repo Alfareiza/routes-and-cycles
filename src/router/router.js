@@ -83,14 +83,14 @@ const router = createRouter({
   })
 
 // video 135: Global Guard - Sync
-router.beforeEach( (to, from, next) => {
+// router.beforeEach( (to, from, next) => {
    
    // This is useful to determine where the user
    // is coming from (from) and where he goes (to)
    // It's also possible to execute in the next, where
    // we want to send him (next({name: 'pokemon-home'}))
 
-      console.log({to, from, next})
+      // console.log({to, from, next})
 //     ⬇︎⬇︎ will print this ⬇︎⬇︎
 //     {
 //       "to": {
@@ -219,8 +219,28 @@ router.beforeEach( (to, from, next) => {
 //           "meta": {}
 //       }
 //   }
-})
+// })
 
+// video 136: Global Guard - Async
+const canAccess = () => {
+   return new Promise (resolve => {
+      
+      const random = Math.random() * 100
+      if (random > 70) {
+         console.log('Autenticado', random)
+         resolve(true)
+      } else{
+         console.log('No Autenticado', random)
+         resolve(false)
+      }
+
+   })
+}
+
+router.beforeEach( async (to, from, next) => {
+   const authorized = await canAccess()
+   authorized ? next() : next({name: 'pokemon-home'})
+})
 
 // video 120
 export default router
