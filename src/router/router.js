@@ -82,5 +82,145 @@ const router = createRouter({
     routes, // short for `routes: routes`
   })
 
+// video 135: Global Guard - Sync
+router.beforeEach( (to, from, next) => {
+   
+   // This is useful to determine where the user
+   // is coming from (from) and where he goes (to)
+   // It's also possible to execute in the next, where
+   // we want to send him (next({name: 'pokemon-home'}))
+
+      console.log({to, from, next})
+//     ⬇︎⬇︎ will print this ⬇︎⬇︎
+//     {
+//       "to": {
+//           "fullPath": "/pokemon/about",
+//           "hash": "",
+//           "query": {},
+//           "name": "pokemon-about",
+//           "path": "/pokemon/about",
+//           "params": {},
+//           "matched": [
+//               {
+//                   "path": "/pokemon",
+//                   "name": "pokemon",
+//                   "meta": {},
+//                   "props": {
+//                       "default": false
+//                   },
+//                   "children": [
+//                       {
+//                           "path": "",
+//                           "name": "pokemon-home"
+//                       },
+//                       {
+//                           "path": "about",
+//                           "name": "pokemon-about"
+//                       },
+//                       {
+//                           "path": "pokemonid/:pokemonId",
+//                           "name": "pokemon-id"
+//                       },
+//                       {
+//                           "path": "/",
+//                           "redirect": {
+//                               "name": "pokemon-about"
+//                           }
+//                       }
+//                   ],
+//                   "instances": {},
+//                   "leaveGuards": {},
+//                   "updateGuards": {},
+//                   "enterCallbacks": {},
+//                   "components": {}
+//               },
+//               {
+//                   "path": "/pokemon/about",
+//                   "name": "pokemon-about",
+//                   "meta": {},
+//                   "props": {
+//                       "default": false
+//                   },
+//                   "children": [],
+//                   "instances": {},
+//                   "leaveGuards": {},
+//                   "updateGuards": {},
+//                   "enterCallbacks": {},
+//                   "components": {}
+//               }
+//           ],
+//           "meta": {},
+//           "redirectedFrom": {
+//               "fullPath": "/",
+//               "path": "/",
+//               "query": {},
+//               "hash": "",
+//               "params": {},
+//               "matched": [
+//                   {
+//                       "path": "/pokemon",
+//                       "name": "pokemon",
+//                       "meta": {},
+//                       "props": {
+//                           "default": false
+//                       },
+//                       "children": [
+//                           {
+//                               "path": "",
+//                               "name": "pokemon-home"
+//                           },
+//                           {
+//                               "path": "about",
+//                               "name": "pokemon-about"
+//                           },
+//                           {
+//                               "path": "pokemonid/:pokemonId",
+//                               "name": "pokemon-id"
+//                           },
+//                           {
+//                               "path": "/",
+//                               "redirect": {
+//                                   "name": "pokemon-about"
+//                               }
+//                           }
+//                       ],
+//                       "instances": {},
+//                       "leaveGuards": {},
+//                       "updateGuards": {},
+//                       "enterCallbacks": {},
+//                       "components": {}
+//                   },
+//                   {
+//                       "path": "/",
+//                       "redirect": {
+//                           "name": "pokemon-about"
+//                       },
+//                       "meta": {},
+//                       "props": {},
+//                       "children": [],
+//                       "instances": {},
+//                       "leaveGuards": {},
+//                       "updateGuards": {},
+//                       "enterCallbacks": {}
+//                   }
+//               ],
+//               "meta": {},
+//               "href": "#/"
+//           },
+//           "href": "#/pokemon/about"
+//       },
+//       "from": {
+//           "path": "/",
+//           "params": {},
+//           "query": {},
+//           "hash": "",
+//           "fullPath": "/",
+//           "matched": [],
+//           "meta": {}
+//       }
+//   }
+})
+
+
 // video 120
 export default router

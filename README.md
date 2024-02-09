@@ -32,11 +32,13 @@ src/
 |   +-- moduleB/
 |   +-- moduleC/
 ```
-- Routes for navigation.
+- Routes for navigation
 
-- Route for page not found.
+- Route for page not found
 
-- Lazy load.
+- Routes with children
+
+- Lazy load
 
 - Navbar caching compoments
 
