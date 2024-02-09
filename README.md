@@ -38,6 +38,10 @@ src/
 
 - Routes with children
 
+- Global guard (sync & async)
+
+- Specific guard in route
+
 - Lazy load
 
 - Navbar caching compoments
