@@ -7,14 +7,13 @@
 # 📖 Contents
 <ul>
   <li><a href="#-about">About</a></li>
-  <li><a href="#-demonstration">Demonstration</a></li>
   <li><a href="#-features">Features</a></li>
-  <li><a href="#credits">Credits</a></li>
+  <li><a href="#credits">Setup</a></li>
 </ul>
 
 # 📃 About
 
-# 🌄 Demonstration
+This is an example vue.js application where some features were implemented. In the features section are listed.
 
 # 🔥 Features
 
@@ -50,6 +49,7 @@ src/
 
 - QueryParams
 
+# 🛠️ Setup
 
 ## Project setup
 ```
