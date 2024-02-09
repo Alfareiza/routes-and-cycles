@@ -2,7 +2,7 @@
     <div class="pokemon-layout">
         <h1>Pokemon Layout</h1>
 
-        <!-- video 132 -->
+        <!-- Child routes will be rendered here-->
         <router-view></router-view>
     </div>
   

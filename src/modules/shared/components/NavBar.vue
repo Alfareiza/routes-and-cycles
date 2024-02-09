@@ -1,10 +1,12 @@
 <template>
     <div class="bg-gray">
         <!-- No se usa <a> pq con <router-link> se consume el recurso router como tal -->
-        <router-link :to="{ name: 'home'}">Pokemon List</router-link>
+        <router-link :to="{ name: 'pokemon-home'}">Pokemon List</router-link>
         <!-- Calling the route by the name, instead of harded coded -->
         <router-link :to="{ name: 'pokemon-id', params: { pokemonId: 85 }}">Pokemon About</router-link>
-        <router-link :to="{ name: 'about'}">Pokemon Detail</router-link>
+        <router-link :to="{ name: 'pokemon-about'}">Pokemon Detail</router-link>
+        <router-link :to="{ name: 'dbz-characters'}">DBZ Characters</router-link>
+        <router-link :to="{ name: 'dbz-about'}">DBZ Detail</router-link>
     </div>    
 </template>
 <style scoped>
