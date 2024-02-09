@@ -8,7 +8,7 @@
 <ul>
   <li><a href="#-about">About</a></li>
   <li><a href="#-features">Features</a></li>
-  <li><a href="#credits">Setup</a></li>
+  <li><a href="#setup">Setup</a></li>
 </ul>
 
 # 📃 About
